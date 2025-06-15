@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Bolsas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calcular Bolsas de Alimento</h1>
+    </header>
+    <section>
+        <form action="procesa.php" method="get">
+            <div>
+                <label for="mascota">Mascota</label>
+                <select name="mascota" id="id_mascota">
+                    <option value="Fox Terrier">Fox Terrier</option>
+                    <option value="Labrador">Labrador</option>
+                    <option value="Caniche">Caniche</option>
+                </select> <br>
+            </div>
+            <div>
+                <label for="cantidad">Cantidad Alimento</label>
+                <input type="number" name="cantidad"> <br>
+            </div>
+            <div>
+                <label for="tipoBolsa">Tipo de bolsa</label>
+                <select name="tipoBolsa" id="id_tipoBolsa">
+                    <option value="1">1/2 Kilogramo</option>
+                    <option value="2">1 Kilogramo</option>
+                    <option value="3">2 Kilogramos</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Calcular</button>
+            </div>
+
+        </form>
+    </section>
+</body>
+
+</html>

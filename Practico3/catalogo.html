@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="estilos/catalogo.css">
+</head>
+<body>
+    <h1>CATÁLOGO DE ARTE</h1>
+    <form method="post">
+        <h2>Introduce los t&eacute;rminos de b&uacute;squeda:</h2>
+        <div class="busqueda">
+            <div class="obra">
+                <h3>OBRA</h3>
+                <label for="titulo">Titulo</label>
+                <input type="text" name="inputTitulo" id="idTitulo"> <br>
+                <label for="autor">Autor</label>
+                <input type="text" name="inputAutor" id="idAutor">
+            </div>
+            <div class="tipo">
+                <h3>TIPO</h3>
+                <input type="checkbox" name="escultura" id="idEscultura" value="E">Escultura <br>
+                <input type="checkbox" name="arquitectura" id="idArquitectura" value="A">Arquitectura <br>
+                <input type="checkbox" name="pintura" id="idPintura" value="P">Pintura <br>
+            </div>
+            <div class="disponibilidad">
+                <h3>DISPONIBILIDAD</h3>
+                <input type="radio" name="disponibile" id="idMuseo">Museo / Acceso público <br>
+                <input type="radio" name="disponibile" id="idColeccion">Colección privada
+            </div>
+            <div class="estilo">
+                <h3>ESTILO</h3>
+                <select name="combobox" id="idMenu">
+                    <option value="C">Clásico</option>
+                    <option value="M">Moderno</option>
+                    <option value="Ab">Abstracto</option>
+                </select>
+            </div>
+        </div>
+        <div class="sugerencias">
+            <h2>Haganos saber sus sugerencias:</h2>
+            <textarea name="areaTexto" id="idAreaTexto" placeholder="Me gustaria indicar que..."></textarea>
+        </div>
+        <footer>
+            <button type="submit" onclick="validaFormulario()">Buscar</button>
+        </footer>
+    </form>
+    <script src="scripts/catalogo.js"></script>
+</body>
+</html>

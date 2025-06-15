@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+
+#galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    place-items: center;
+}
+
+#galeria img{
+    text-align: center;
+    width: 25%;
+}

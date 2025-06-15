@@ -1,0 +1,109 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.divInit{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border: 3px solid #00b4d8;;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 0px #1987af;
+    width: 500px;
+    height: 600px;
+}
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.btn {
+    --color-main: #000;          
+    --color-hover: var(--color-main);
+    --color-active: var(--color-main);
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    border: 3px solid var(--color-main);
+    font-weight: bold;
+    color: var(--color-main);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s, transform 0.1s;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 200%;
+    height: 200%;
+    background: var(--color-main);
+    transition: all 0.5s ease;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.btn:hover::before {
+    top: -50%;
+    left: -50%;
+}
+.btn:hover {
+    color: white;
+    box-shadow: 0 0 25px var(--color-main);
+}
+
+.btn:active {
+    transform: scale(1.05);
+}
+.btn:active::before {
+    background: var(--color-active);
+}
+.btn-naranja {
+    --color-main: #c46e19;
+    --color-active: #9a5715;
+}
+
+.btn-rojo {
+    --color-main: #d00000;
+    --color-active: #9b0000;
+}
+
+.btn-verde {
+    --color-main: #2b9348;
+    --color-active: #1b6530;
+}
+.btn-celeste{
+    --color-main: #1987af;
+    --color-active: #156a89;
+}
+.inp {
+    border: 3px solid #00b4d8;;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    width: 178px;
+}
+
+.inp:hover {
+    box-shadow: 0 0 25px #00b4d8;
+    border-color: #00b4d8;
+}
+
+.formu{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 0.2rem;
+}

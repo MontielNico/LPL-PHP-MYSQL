@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Útiles</title>
+
+</head>
+<body onload="cargaLista()">
+    <div id="contenedor-principal-utiles">
+        <div id="mensaje_bienvenida">
+
+        </div>
+        <h1>Agregar Útiles a la Lista</h1>
+        <div id="lista-utiles">
+            <input type="text" id="input_utiles"> <button id="btnAgregar" onclick="agregarUtil()">Agregar</button>
+        </div>
+        <div id="contenedor_lista">
+            <h2>Lista de Materiales</h2>
+            <ol id="id_lista">
+
+            </ol>
+        </div>
+        <button type="button" onclick="borrarTodo()">Borrar Todo</button>
+    </div>
+    <script src="scripts/ejercicio_13.js"></script>
+</body>
+</html>

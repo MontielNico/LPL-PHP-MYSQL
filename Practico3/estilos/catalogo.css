@@ -1,0 +1,41 @@
+h1,h3{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+.sugerencias textarea{
+    width: 300px;
+    height: 120px;
+}
+.busqueda{
+    display: flex;
+}
+
+.busqueda div {
+    width: 25%;
+    padding: 8px;
+}
+
+.obra input{
+    margin-bottom: 10px;
+}
+
+.obra #autor{
+    width: 120px;
+}
+
+.tipo input{
+    margin: auto 10px;
+}
+
+.disponibilidad input{
+    margin: auto 10px;
+}
+
+.estilo {
+    text-align: center;
+}
+

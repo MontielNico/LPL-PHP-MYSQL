@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+    <link rel="stylesheet" href="estilos/ejercicio_11.css">
+</head>
+
+<body onload="cuentaCaracteres()">
+    <section id="id_registro">
+        <h1>Registrarse</h1>
+        <article id="contenedor_formulario">
+            <form action="submit" id="miFormulario">
+                <div class="informacion">
+                Email: <input type="email" name="correo_electronico" id="id_email" onblur="validar()" required> <br>
+                </div>
+                <div class="informacion">
+                Contraseña: <input type="password" required id="id_password"> <br>
+                </div>
+                <div class="informacion">
+                Comentarios: <textarea name="areaTexto" id="id_comentarios" maxlength="100"
+                    style="resize: none; width: 200px;" required></textarea>
+                    <p>caracteres restantes: <span id="caracteres">100</span></p> <br>
+                </div>
+                <div class="informacion">
+                Preferencias: <select name="selectorPreferencias" id="id_preferencias">
+                    <option value="1">Informática</option>
+                    <option value="2">Arquitectura</option>
+                    <option value="3">Cocina</option>
+                </select>
+                </div>
+                <div class="informacion">
+                <button type="submit" id="botonEnviar" onclick="validaPassword()">
+                    Enviar
+                </button>
+                </div>  
+            </form>
+        </article>
+    </section>
+    <script src="scripts/ejercicio_11.js"></script>
+</body>
+
+</html>
