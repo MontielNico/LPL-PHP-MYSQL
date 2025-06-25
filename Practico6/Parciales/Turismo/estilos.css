@@ -1,0 +1,133 @@
+/* --- RESET GENERAL --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- CUERPO Y FUENTE --- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fefcea, #f1da36);
+  color: #2c3e50;
+  padding: 20px;
+}
+
+/* --- TITULOS --- */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f0db4f;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #333;
+}
+
+h2 {
+  margin-top: 40px;
+  color: #b89d00;
+  border-bottom: 2px solid #f0db4f;
+  padding-bottom: 5px;
+}
+
+/* --- FILTROS --- */
+#contenedor-filtros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+#contenedor-filtros label {
+  font-weight: bold;
+}
+
+#contenedor-filtros select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  min-width: 150px;
+  transition: border-color 0.3s;
+}
+
+#contenedor-filtros select:focus {
+  border-color: #f0db4f;
+  outline: none;
+}
+
+/* --- TABLAS --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #fffef2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #fef9cd;
+  color: #8b7400;
+  font-weight: 600;
+}
+
+table tr:hover {
+  background-color: #fff7c0;
+}
+
+/* --- IMÁGENES DE EMPRESAS --- */
+.img_empresa {
+  width: 80px;
+  max-width: 100px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.img_empresa:hover {
+  transform: scale(1.05);
+}
+
+/* --- CONTENEDORES --- */
+#contenedor-maestro, #contenedor-detalle {
+  margin-top: 30px;
+}
+
+/* --- ENLACES --- */
+a {
+  color: #d4b200;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  #contenedor-filtros {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  table th, table td {
+    padding: 10px;
+  }
+
+  .img_empresa {
+    width: 60px;
+  }
+}

@@ -1,0 +1,29 @@
+
+#contenedor-sugerencias {
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 165px;
+    background-color: white;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 2px;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+#contenedor-sugerencias ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor-sugerencias li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#contenedor-sugerencias li:hover {
+    background-color: #f0f0f0;
+}
+
