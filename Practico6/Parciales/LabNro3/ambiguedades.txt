@@ -1,0 +1,2 @@
+No pude hacer andar el ver detalle pero creo que es por un error de concatenación a la hora de aplicar el evento en el boton.
+Ese seria el unico problema que tuve, el resto creo que anda bien.
